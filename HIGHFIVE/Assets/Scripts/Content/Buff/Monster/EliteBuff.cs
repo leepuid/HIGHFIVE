@@ -22,13 +22,13 @@ public class EliteBuff : BaseBuff
     {
         myCharacter.stat.Attack += _eliteBuffData.atk;
         myCharacter.stat.Defence += _eliteBuffData.def;
-        myCharacter.stat.AttackSpeed += _eliteBuffData.spd;
+        myCharacter.stat.MoveSpeed += _eliteBuffData.moveSpd;
     }
 
     public override void Deactivation()
     {
         myCharacter.stat.Attack -= _eliteBuffData.atk;
         myCharacter.stat.Defence -= _eliteBuffData.def;
-        myCharacter.stat.AttackSpeed -= _eliteBuffData.spd;
+        myCharacter.stat.MoveSpeed -= _eliteBuffData.moveSpd;
     }
 }

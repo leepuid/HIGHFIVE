@@ -26,7 +26,7 @@ public class StabbingBuff : BaseBuff
         myCharacter.transform.Find("BerserkEffect").gameObject.SetActive(true);
         myCharacter.GetComponent<PhotonView>().RPC("SyncActive", RpcTarget.All, true);
         yield return new WaitForSeconds(buffData.effectTime);
-        target.GetComponent<Stat>().MoveSpeed -= _stabbingBuffData.spd;
+        target.GetComponent<Stat>().MoveSpeed -= _stabbingBuffData.moveSpd;
         yield return new WaitForSeconds(buffData.duration - buffData.effectTime);
         myCharacter.transform.Find("BerserkEffect").gameObject.SetActive(false);
         myCharacter.GetComponent<PhotonView>().RPC("SyncActive", RpcTarget.All, false);
@@ -35,7 +35,7 @@ public class StabbingBuff : BaseBuff
 
     public override void Activation()
     {
-        myCharacter.stat.MoveSpeed += _stabbingBuffData.spd;
+        myCharacter.stat.MoveSpeed += _stabbingBuffData.moveSpd;
     }
 
     public override void Deactivation() { }

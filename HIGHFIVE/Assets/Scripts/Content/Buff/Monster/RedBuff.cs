@@ -11,7 +11,7 @@ public class RedBuff : BaseBuff
             _redBuffData = redBuffData;
         }
         //나중에 데이터 매니저에서 받아오기
-        buffData.buffSprite = Main.ResourceManager.Load<Sprite>("Sprites/BuffIcon/LoserAnger");
+        buffData.buffSprite = Main.ResourceManager.Load<Sprite>("Sprites/BuffIcon/Red");
         buffData.type = typeof(RedBuff);
         buffData.duration = _redBuffData.durationTime;
         buffData.curTime = 0;

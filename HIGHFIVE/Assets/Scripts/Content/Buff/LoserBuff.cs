@@ -22,13 +22,13 @@ public class LoserBuff : BaseBuff
     {
         myCharacter.stat.Attack += _loserBuffData.atk;
         myCharacter.stat.Defence += _loserBuffData.def;
-        myCharacter.stat.AttackSpeed += _loserBuffData.spd;
+        myCharacter.stat.AttackSpeed += _loserBuffData.atkSpd;
     }
 
     public override void Deactivation()
     {
         myCharacter.stat.Attack -= _loserBuffData.atk;
         myCharacter.stat.Defence -= _loserBuffData.def;
-        myCharacter.stat.AttackSpeed -= _loserBuffData.spd;
+        myCharacter.stat.AttackSpeed -= _loserBuffData.atkSpd;
     }
 }

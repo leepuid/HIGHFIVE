@@ -7,7 +7,8 @@ public class BuffDBEntity
     public string info;
     public int atk;
     public int def;
-    public int spd;
+    public int moveSpd;
+    public int atkSpd;
     public float durationTime;
     public int trueDamage;
     public int damage;

@@ -252,7 +252,7 @@ MonoBehaviour:
     info: "\uC774\uC18D\uC99D\uAC00, \uB370\uBBF8\uC9C0 \uC99D\uAC00"
     atk: 0
     def: 0
-    spd: 2
+    spd: 0
     durationTime: 6
     trueDamage: 0
     damage: 10
