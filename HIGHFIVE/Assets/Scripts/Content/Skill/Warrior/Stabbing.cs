@@ -17,7 +17,7 @@ public class Stabbing : BaseSkill
             _stabbingBuffData = stabbingBuffData;
         }
         //나중에 데이터 매니저에서 받아오기
-        skillData.info = $"자신의 이동속도가 {_stabbingBuffData.effectTime}초 동안 {_stabbingBuffData.spd}증가하고" +
+        skillData.info = $"자신의 이동속도가 {_stabbingBuffData.effectTime}초 동안 {_stabbingBuffData.moveSpd}증가하고" +
             $"{_stabbingBuffData.durationTime}초 동안 {_stabbingBuffData.damage + Main.GameManager.SpawnedCharacter.stat.Attack}데미지만큼 평타 강화가 된다";
         skillData.skillSprite = Main.ResourceManager.Load<Sprite>("Sprites/SkillIcon/Berserk");
         skillData.coolTime = _stabbingData.coolTime;
