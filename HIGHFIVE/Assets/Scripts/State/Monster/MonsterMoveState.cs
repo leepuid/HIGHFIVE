@@ -13,14 +13,14 @@ public class MonsterMoveState : MonsterBaseState
     {
         base.Enter();
         _speedModifier = 1;
-        //Debug.Log("Move Enter");
+        Debug.Log("Move Enter");
     }
 
     public override void Exit()
     {
         base.Exit();
         _monsterStateMachine._monster.StopAnimationAll();
-        //Debug.Log("Move Exit");
+        Debug.Log("Move Exit");
     }
     public override void StateUpdate()
     {
@@ -91,6 +91,8 @@ public class MonsterMoveState : MonsterBaseState
             _monsterStateMachine._monster.targetObject.transform.position,
             _monsterStateMachine._monster.stat.MoveSpeed * Time.deltaTime * _monsterStateMachine.moveSpeedModifier
         );
+        Debug.Log(_objectName);
+        //if(_objectName == "Tree") 
         _monsterStateMachine._monster.SetAnimation(angle);
     }
 

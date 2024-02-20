@@ -1,7 +1,10 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -51,7 +54,7 @@ public class LoadingAnimation : MonoBehaviour
             {
                 if (players[i].CustomProperties.TryGetValue("IsLoad", out object value))
                 {
-                    //Debug.Log((bool)value);
+                    Debug.Log((bool)value);
                     if ((bool)value == false) return;
                 }
                 else
@@ -97,7 +100,7 @@ public class LoadingAnimation : MonoBehaviour
         LoadingUI(progress);
 
         loadingCount++;
-        //Debug.Log(path + " Loaded!!");
+        Debug.Log(path + " Loaded!!");
     }
 
     private void LoadingUI(float progress)

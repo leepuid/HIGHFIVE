@@ -7,7 +7,6 @@ TagManager:
   - Enemy
   - Monster
   - Button
-  - MiniMap
   layers:
   - Default
   - TransparentFX
@@ -19,8 +18,8 @@ TagManager:
   - Ground
   - Blue
   - Red
-  - MiniMap
-  - 
+  - Wall
+  - MapObj
   - 
   - 
   - 
@@ -46,23 +45,23 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: wall
-    uniqueID: 2425651459
-    locked: 0
-  - name: Background
-    uniqueID: 4250941897
-    locked: 0
-  - name: object
     uniqueID: 4189426099
     locked: 0
+  - name: Background
+    uniqueID: 2425651459
+    locked: 0
+  - name: object
+    uniqueID: 4250941897
+    locked: 0
   - name: Monster
-    uniqueID: 1930912089
+    uniqueID: 1541179761
     locked: 0
   - name: UI
-    uniqueID: 3434580127
+    uniqueID: 2625185627
     locked: 0
   - name: Character
-    uniqueID: 2217246433
+    uniqueID: 4218236101
     locked: 0
   - name: SkillEffect
-    uniqueID: 965767141
+    uniqueID: 1108810753
     locked: 0

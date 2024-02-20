@@ -15,6 +15,7 @@ public class StartScene : BaseScene
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Click");
             Main.SoundManager.PlaySFX("SFX_Click", 0.01f);
         }
     }
