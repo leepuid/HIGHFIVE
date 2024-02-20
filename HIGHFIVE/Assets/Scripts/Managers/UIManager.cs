@@ -11,7 +11,6 @@ public class UIManager
 
     public void OpenPopup(GameObject go)
     {
-        Debug.Log(go);
         if (!isPopupOpen)
         {
             isPopupOpen = true;

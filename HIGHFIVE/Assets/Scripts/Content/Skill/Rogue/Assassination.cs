@@ -1,7 +1,5 @@
 using Photon.Pun;
 using Photon.Realtime;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -24,8 +22,8 @@ public class Assassination : BaseSkill
         //나중에 데이터 매니저에서 받아오기
         skillData.skillName = _assassinationData.name;
         skillData.info = $"적에게 {_assassinationData.damage + (int)(Main.GameManager.SpawnedCharacter.stat.Attack * _assassinationData.damageRatio)} " +
-            $"만큼의 피해를 가하고 {assassinationBuffData.durationTime}초 동안" +
-            $" {assassinationBuffData.trueDamage + Main.GameManager.SpawnedCharacter.stat.Attack}만큼의 고정 피해를 주는 출혈을 일으킨다.";
+            $"만큼의 피해를 가하고 {_assassinationBuffData.durationTime}초 동안" +
+            $" {_assassinationBuffData.trueDamage + Main.GameManager.SpawnedCharacter.stat.Attack}만큼의 고정 피해를 주는 출혈을 일으킨다.";
         skillData.skillSprite = Main.ResourceManager.Load<Sprite>("Sprites/SkillIcon/Assessination");
         skillData.coolTime = _assassinationData.coolTime;
         skillData.curTime = skillData.coolTime;

@@ -1,16 +1,10 @@
-using Photon.Pun;
-using Photon.Realtime;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 
 public class Stabbing : BaseSkill
 {
     private SkillDBEntity _stabbingData;
     private BuffDBEntity _stabbingBuffData;
-    private GameObject _targetObject;
+    //private GameObject _targetObject;
     public override void Init()
     {
         base.Init();

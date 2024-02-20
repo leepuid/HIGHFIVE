@@ -12,14 +12,14 @@ public class MonsterIdleState : MonsterBaseState
         base.Enter();
         _speedModifier = 0;
         StartAnimation(_animData.IdleParameterHash);
-        Debug.Log("Idle Enter");
+        //Debug.Log("Idle Enter");
     }
 
     public override void Exit()
     {
         base.Exit();
         StopAnimation(_animData.IdleParameterHash);
-        Debug.Log("Idle Exit");
+        //Debug.Log("Idle Exit");
     }
 
     public override void StateUpdate()

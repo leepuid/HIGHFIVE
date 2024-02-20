@@ -109,7 +109,7 @@ public class GoogleSheetManager : MonoBehaviour
             return;
         }
 
-        print(GD.order + "을 실행했습니다.\n메시지 : " + GD.msg);
+        //print(GD.order + "을 실행했습니다.\n메시지 : " + GD.msg);
 
         if (GD.order == "getValue")
         {
